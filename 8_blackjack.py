@@ -1,5 +1,5 @@
 import random
-from replit import clear  
+#from replit import clear  
 def deal_card():
   cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
   card = random.choice (cards) 
@@ -17,17 +17,17 @@ def compare (u_score, c_score):
   if u_score == c_score:
     print ("draw")
   elif c_score == 0:
-    print ("C has blackjack, you lose")
+    print ("Computer has blackjack, you lose")
   elif u_score == 0: 
     print ("You win with blackjakc")
   elif u_score > 21:
     print ("over 21, you lose")
   elif c_score > 21: 
-    print ("c over 21, you win")
+    print ("Computer over 21, you win")
   elif c_score > u_score:
-    print ("c has higher score")
+    print ("Computer has higher score")
   elif u_score > c_score:
-    print ("u has higher score")
+    print ("You has higher score")
     
 def play_game (): 
   game_end = False
@@ -60,8 +60,5 @@ def play_game ():
   
 
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-  clear()
+  #clear()
   play_game()
-
-
-
