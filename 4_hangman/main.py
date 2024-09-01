@@ -5,8 +5,6 @@ import random
 #TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
 #Delete this line: word_list = ["ardvark", "baboon", "camel"]
 import hangman_words
-import hangman_art
-print (hangman_art.logo)
 chosen_word = random.choice(hangman_words.word_list)
 stages = hangman_art.stages
 word_length = len(chosen_word)
